@@ -1,0 +1,6 @@
+{
+  "name": "TM Offline Demo v0.1",
+  "description": "Proof of Concept untuk demo transaksi offline Technology Money (TM) antar dua HP Android menggunakan QR Code, Bluetooth Relay, Biometric, dan Sinkronisasi Neurosphere.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

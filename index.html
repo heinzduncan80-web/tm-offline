@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TM Sovereign Offline Wallet — Kas Bantuan Peradaban</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+    <meta name="theme-color" content="#10b981" />
+    
+    <!-- Open Graph / Meta Tags for WhatsApp, Facebook, Telegram, etc. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TM Sovereign Offline Wallet" />
+    <meta property="og:description" content="Kas Bantuan Peradaban: Dompet transaksi peer-to-peer 100% offline berlandaskan kebaikan swadaya tanpa jaringan internet." />
+    <meta property="og:image" content="/logo.jpg" />
+    <meta property="og:url" content="https://web-tm-offline.vercel.app" />
+
+    <!-- Twitter Card metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TM Sovereign Offline Wallet" />
+    <meta name="twitter:description" content="Kas Bantuan Peradaban: Dompet transaksi peer-to-peer 100% offline tanpa jaringan internet." />
+    <meta name="twitter:image" content="/logo.jpg" />
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker registered successfully:', reg.scope))
+            .catch(err => console.log('Service Worker registration failed:', err));
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

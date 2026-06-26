@@ -1,0 +1,16 @@
+{
+  "short_name": "TM Offline",
+  "name": "Technology Money Sovereign Offline Wallet",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "type": "image/jpeg",
+      "sizes": "1000x1000"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#020617",
+  "theme_color": "#10b981",
+  "display": "standalone",
+  "orientation": "portrait"
+}

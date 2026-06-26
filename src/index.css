@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@keyframes breathing-glow {
+  0%, 100% {
+    opacity: 0.5;
+    box-shadow: 0 0 4px rgba(16, 185, 129, 0.2);
+  }
+  25%, 75% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1.0;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 1.0);
+  }
+}
+
+@keyframes breathing-glow-gold {
+  0%, 100% {
+    opacity: 0.5;
+    box-shadow: 0 0 4px rgba(217, 119, 6, 0.2);
+  }
+  25%, 75% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1.0;
+    box-shadow: 0 0 20px rgba(217, 119, 6, 1.0);
+  }
+}
+
+.animate-glow-emerald {
+  animation: breathing-glow 2.5s infinite ease-in-out;
+}
+
+.animate-glow-amber {
+  animation: breathing-glow-gold 2.5s infinite ease-in-out;
+}
+
